@@ -522,3 +522,11 @@ details p {
     grid-template-columns: 1fr;
   }
 }
+/* Logo img */
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+.logo-img:hover {
+  opacity: 0.85;
+}

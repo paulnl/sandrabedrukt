@@ -1,5 +1,13 @@
 // SandraBedrukt Scripts
 
+// Category ID naar HTML mapping
+const categoryLinks = {
+  'kraamcadeau': 'kraamcadeau-met-naam.html',
+  'mok': 'mok-metnaam.html',
+  'foto': 'cadeau-met-foto.html',
+  'budget': 'goedkope-gepersonaliseerde-cadeaus.html'
+};
+
 // Smooth scroll voor anchors
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -97,7 +105,7 @@ async function loadCategories() {
     if (!data.categories || data.categories.length === 0) return;
     
     grid.innerHTML = data.categories.map(cat => `
-      <a href="${cat.id}.html" class="cat-card">
+      <a href="${categoryLinks[cat.id] || cat.id + '.html'}" class="cat-card">
         <h3>${cat.name}</h3>
         <p>${cat.description}</p>
       </a>

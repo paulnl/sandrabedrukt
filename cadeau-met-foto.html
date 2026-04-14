@@ -164,16 +164,15 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>Deze pagina bevat affiliate links.</p>
-      <div class="footer-links">
-        <a href="over.html">Over</a>
-        <a href="disclaimer.html">Disclaimer</a>
-        <a href="privacy.html">Privacy</a>
-      </div>
-    </div>
-  </footer>
+<div id="footer"></div>
+
+<script>
+fetch('/footer.html')
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById('footer').innerHTML = html;
+  });
+</script>
   <script src="js/snippet-loader.js"></script>
 </body>
 </html>

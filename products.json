@@ -1,22 +1,22 @@
 {
   "categories": [
     {
-      "id": "kraamcadeau",
+      "id": "kraamcadeau-metnaam",
       "name": "Kraamcadeau met naam",
       "description": "Persoonlijke baby's cadeaus voor het kraambed"
     },
     {
-      "id": "mok",
+      "id": "mok-metnaam",
       "name": "Mok met naam",
       "description": "Klassieke favoriet voor elke gelegenheid"
     },
     {
-      "id": "foto",
+      "id": "cadeau-met-foto",
       "name": "Cadeau met foto",
       "description": "Originele cadeaus met jouw foto"
     },
     {
-      "id": "budget",
+      "id": "goedkope-gepersonaliseerde-cadeaus",
       "name": "Budget cadeaus",
       "description": "Leuke cadeaus voor weinig geld"
     }

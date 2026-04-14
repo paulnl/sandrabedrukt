@@ -2,7 +2,7 @@
 
 // Category ID naar HTML mapping
 const categoryLinks = {
-  'kraamcadeau': 'kraamcadeau-met-naam.html',
+  'kraamcadeau': 'kraamcadeau-metnaam.html',
   'mok': 'mok-metnaam.html',
   'foto': 'cadeau-met-foto.html',
   'budget': 'goedkope-gepersonaliseerde-cadeaus.html'

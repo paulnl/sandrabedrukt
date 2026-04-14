@@ -1,24 +1,28 @@
 {
   "faq": [
-    {
-      "question": "Wat is een goed gepersonaliseerd cadeau onder €25?",
-      "answer": "Onder de €25 zijn er veel opties: mokken met naam (vanaf €14,95), sleutelhangers met foto (vanaf €12,95), T-shirts met opdruk (vanaf €19,95) of een gepersonaliseerde poster (vanaf €17,95). Het hangt af van de ontvanger en de gelegenheid."
+{
+      "question": "Wat is het beste gepersonaliseerde cadeau onder €25?",
+      "answer": "Een mok met naam (€14,95) is meestal de veiligste keuze. Iedereen drinkt koffie of thee en het is altijd raak. Voor baby's werkt een romper met naam (€16,95) perfect."
     },
     {
-      "question": "Hoe snel wordt een bedrukt cadeau geleverd?",
-      "answer": "De meeste gepersonaliseerde cadeaus hebben een productietijd van 1-3 werkdagen, plus verzending. Reken op 3-7 werkdagen totaal. Bij spoed: kies express verzending."
+      "question": "Hoe lang duurt de levering van bedrukte cadeaus?",
+      "answer": "Reken op 3-7 werkdagen totaal (1-3 dagen productie + verzending). Voor verjaardagen bestel je 5 dagen van tevoren. Express opties zijn vaak +€5 maar dan binnen 48u."
     },
     {
-      "question": "Zijn gepersonaliseerde cadeaus duurder?",
-      "answer": "Sommige shops rekenen een kleine toeslag voor personalisatie (vaak €2-10), maar veel producten zijn al beschikbaar vanaf €12-20."
+      "question": "Kan ik een gepersonaliseerd cadeau retourneren?",
+      "answer": "Meestal niet. Zodra er een naam/foto op staat, beschouwen webshops het als 'custom made'. Check altijd het retourbeleid, maar reken op niet-retourneerbaar."
     },
     {
-      "question": "Kan ik een gepersonaliseerd product retourneren?",
-      "answer": "Dat hangt af van de winkel. Gepersonaliseerde producten kunnen vaak niet worden geretourneerd wegens aard van het product."
+      "question": "Welk materiaal is het beste voor mokken?",
+      "answer": "Keramiek is standaard en goedkoop, maar vaatwasserbestendig keramiek is beter (€2 duurder). Porselein voelt luxer maar breekt sneller. Voor dagelijks gebruik: keramiek."
     },
     {
-      "question": "Wat is leuk als kraamcadeau met naam?",
-      "answer": "Populaire kraamcadeaus zijn: babydeken met geborduurde naam (€24,95), romper met naam (€16,95) of een setje."
+      "question": "Wat is een goed kraamcadeau met naam?",
+      "answer": "Romper (€16,95) of babydeken (€24,95) met naam. Rompers zijn praktisch, dekens blijven langer. Vermijd kleding in te kleine maat (baby's groeien snel!)."
+    },
+    {
+      "question": "Verschilt de prijs per webshop sterk?",
+      "answer": "€2-5 verschil meestal. Let op verzendkosten! Een mok van €12,95 bij webshop A + €6 verzending = €18,95. Webshop B €15,95 gratis verzending = goedkoper totaal."
     }
   ]
 }

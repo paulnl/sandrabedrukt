@@ -18,4 +18,29 @@ document.querySelectorAll('a[rel*="sponsored"]').forEach(link => {
   });
 });
 
+// FAQ laden uit JSON
+async function loadFAQ() {
+  const container = document.getElementById('faq-list');
+  if (!container) return;
+  
+  try {
+    const response = await fetch('faq.json');
+    const data = await response.json();
+    
+    if (!data.faq || data.faq.length === 0) return;
+    
+    container.innerHTML = data.faq.map(item => `
+      <details>
+        <summary>${item.question}</summary>
+        <p>${item.answer}</p>
+      </details>
+    `).join('');
+  } catch (error) {
+    console.error('FAQ laden mislukt:', error);
+  }
+}
+
+// Start
+document.addEventListener('DOMContentLoaded', loadFAQ);
+
 console.log('SandraBedrukt loaded');

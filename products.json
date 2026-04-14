@@ -1,0 +1,196 @@
+{
+  "categories": [
+    {
+      "id": "kraamcadeau",
+      "name": "Kraamcadeau met naam",
+      "description": "Persoonlijke baby's cadeaus voor het kraambed"
+    },
+    {
+      "id": "mok",
+      "name": "Mok met naam",
+      "description": "Klassieke favoriet voor elke gelegenheid"
+    },
+    {
+      "id": "foto",
+      "name": "Cadeau met foto",
+      "description": "Originele cadeaus met jouw foto"
+    },
+    {
+      "id": "budget",
+      "name": "Budget cadeaus",
+      "description": "Leuke cadeaus voor weinig geld"
+    }
+  ],
+  "products": [
+    {
+      "id": "mok-met-naam",
+      "name": "Mok met naam",
+      "description": "Een klassieker die altijd werkt. Kies een naam, een lieve tekst of geboortedatum.",
+      "fit": "Verjaardag, Moederdag, bedankje",
+      "price": "Vanaf €14,95",
+      "link": "mok-met-naam.html",
+      "showOnHomepage": true,
+      "image": "mok-met-naam.png",
+      "categories": {
+        "kraamcadeau": false,
+        "mok": true,
+        "foto": false,
+        "budget": true
+      },
+      "badge": "populair"
+    },
+    {
+      "id": "romper-met-naam",
+      "name": "Romper met naam",
+      "description": "Perfect als kraamcadeau. Zachte katoen met bedrukte of geborduurde naam.",
+      "fit": "Kraamcadeau, baby",
+      "price": "Vanaf €16,95",
+      "link": "mok-met-naam.html",
+      "showOnHomepage": true,
+      "image": "romper-met-naam.png",
+      "categories": {
+        "kraamcadeau": true,
+        "mok": false,
+        "foto": false,
+        "budget": true
+      },
+      "badge": "budget"
+    },
+    {
+      "id": "sleutelhanger-met-foto",
+      "name": "Sleutelhanger met foto",
+      "description": "Een persoonlijke herinnering om altijd bij je te dragen. Kies een eigen foto.",
+      "fit": "Verjaardag, cadeautje",
+      "price": "Vanaf €12,95",
+      "link": "mok-met-naam.html",
+      "showOnHomepage": true,
+      "image": "sleutelhanger.png",
+      "categories": {
+        "kraamcadeau": false,
+        "mok": false,
+        "foto": true,
+        "budget": true
+      },
+      "badge": "levering"
+    },
+    {
+      "id": "bedrukt-kussen",
+      "name": "Bedrukt kussen",
+      "description": "Een zacht kussen met een persoonlijke tekst, naam of foto. Leverbaar in diverse maten.",
+      "fit": "Verjaardag, kraamcadeau",
+      "price": "Vanaf €19,95",
+      "link": "mok-met-naam.html",
+      "showOnHomepage": true,
+      "image": "kussen.png",
+      "categories": {
+        "kraamcadeau": true,
+        "mok": false,
+        "foto": true,
+        "budget": false
+      },
+      "badge": null
+    },
+    {
+      "id": "gepersonaliseerde-poster",
+      "name": "Gepersonaliseerde poster",
+      "description": "Van een lieve quote tot een geboortekaartje in lijst. Betaalbaar en makkelijk op te hangen.",
+      "fit": "Verjaardag, kraamcadeau",
+      "price": "Vanaf €17,95",
+      "link": "mok-metnaam.html",
+      "showOnHomepage": true,
+      "image": "poster.png",
+      "categories": {
+        "kraamcadeau": true,
+        "mok": false,
+        "foto": true,
+        "budget": true
+      },
+      "badge": "budget"
+    },
+    {
+      "id": "snijplank-met-naam",
+      "name": "Snijplank met naam",
+      "description": "Een houten snijplank met gegraveerde naam of tekst. Functioneel én persoonlijk.",
+      "fit": "Kookliefhebber, verjaardag",
+      "price": "Vanaf €21,95",
+      "link": "mok-metnaam.html",
+      "showOnHomepage": true,
+      "image": "snijplank.png",
+      "categories": {
+        "kraamcadeau": false,
+        "mok": false,
+        "foto": false,
+        "budget": false
+      },
+      "badge": null
+    },
+    {
+      "id": "telefoonhoesje-met-naam",
+      "name": "Telefoonhoesje met naam",
+      "description": "Personaliseer je hoesje met een naam of initialen. Dagelijks gebruik, altijd zichtbaar.",
+      "fit": "Verjaardag, cadeautje",
+      "price": "Vanaf €15,95",
+      "link": "mok-metnaam.html",
+      "showOnHomepage": true,
+      "image": "hoesje.png",
+      "categories": {
+        "kraamcadeau": false,
+        "mok": false,
+        "foto": false,
+        "budget": true
+      },
+      "badge": "levering"
+    },
+    {
+      "id": "kerstbal-met-naam",
+      "name": "Kerstbal met naam",
+      "description": "Jaarlijks weer leuk om te geven. Voeg een naam toe of een jaartal.",
+      "fit": "Kerst, sinterklaas",
+      "price": "Vanaf €8,95",
+      "link": "mok-metnaam.html",
+      "showOnHomepage": true,
+      "image": "kerstbal.png",
+      "categories": {
+        "kraamcadeau": false,
+        "mok": false,
+        "foto": false,
+        "budget": true
+      },
+      "badge": null
+    },
+    {
+      "id": "babydeken-met-naam",
+      "name": "Babydeken met naam",
+      "description": "Zachte, comfortabele deken met geborduurde naam. Perfect kraamcadeau.",
+      "fit": "Kraamcadeau, baby",
+      "price": "Vanaf €24,95",
+      "link": "mok-metnaam.html",
+      "showOnHomepage": true,
+      "image": "babydeken.png",
+      "categories": {
+        "kraamcadeau": true,
+        "mok": false,
+        "foto": false,
+        "budget": false
+      },
+      "badge": "populair"
+    },
+    {
+      "id": "t-shirt-met-opdruk",
+      "name": "T-shirt met opdruk",
+      "description": "Kies een grappige tekst, een naam of eigen ontwerp. Verkrijgbaar in diverse kleuren.",
+      "fit": "Verjaardag, Moederdag",
+      "price": "Vanaf €19,95",
+      "link": "mok-metnaam.html",
+      "showOnHomepage": true,
+      "image": "tshirt.png",
+      "categories": {
+        "kraamcadeau": false,
+        "mok": false,
+        "foto": false,
+        "budget": true
+      },
+      "badge": "budget"
+    }
+  ]
+}

@@ -2,16 +2,16 @@
 // Laadt HTML snippets uit categorie folders in bestaande contentblokken
 
 const categoryMap = {
-  "mok-met-naam.html": "categorieen/mok-metnaam/",
-  "kraamcadeau-met-naam.html": "categorieen/kraamcadeau-metnaam/",
+  "mok-met-naam.html": "categorieen/mok-met-na m/",
+  "kraamcadeau-met-naam.html": "categorieen/kraamcadeau-met-na m/",
   "cadeau-met-foto.html": "categorieen/cadeau-met-foto/",
   "goedkope-gepersonaliseerde-cadeaus.html": "categorieen/goedkope-cadeaus/"
 };
 
 // Bekende bestanden per categorie (hardcoded omdat folder listing niet werkt op GitHub Pages)
 const categoryFiles = {
-  "categorieen/mok-metnaam/": ["test.html"],
-  "categorieen/kraamcadeau-metnaam/": ["test.html"],
+  "categorieen/mok-met-na m/": ["test.html"],
+  "categorieen/kraamcadeau-met-na m/": ["test.html"],
   "categorieen/cadeau-met-foto/": ["test.html"],
   "categorieen/goedkope-cadeaus/": ["test.html"]
 };

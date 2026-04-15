@@ -50,36 +50,6 @@ async function loadFAQ() {
   }
 }
 
-
-// === CATEGORIEËN LADEN UIT JSON ===
-async function loadCategories() {
-  const grid = document.getElementById('cat-grid');
-  if (!grid) return;
-  
-  try {
-    const response = await fetch('products.json');
-    const data = await response.json();
-    
-    if (!data.categories || data.categories.length === 0) return;
-    
-    grid.innerHTML = data.categories.map(cat => `
-      <a href="${categoryLinks[cat.id] || cat.id + '.html'}" class="cat-card">
-        <h3>${cat.name}</h3>
-        <p>${cat.description}</p>
-      </a>
-    `).join('');
-    
-  } catch (error) {
-    console.error('Categorieën laden mislukt:', error);
-  }
-}
-
-
-// Start
-document.addEventListener('DOMContentLoaded', function() {
-  loadCategories();
-  loadProducts();
-  loadFAQ();
 });
 
 console.log('SandraBedrukt loaded');

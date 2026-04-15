@@ -79,16 +79,17 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>Deze pagina bevat affiliate links. Bij een aankoop via een link kan een kleine commissie worden ontvangen.</p>
-      <div class="footer-links">
-        <a href="over.html">Over ons</a>
-        <a href="disclaimer.html">Disclaimer</a>
-        <a href="privacy.html">Privacy</a>
-      </div>
-      <p class="footer-copy">© 2026 SandraBedrukt</p>
-    </div>
-  </footer>
+ <div id="footer"></div>
+
+        <script>
+            fetch("./footer.html")
+                .then((r) => r.text())
+                .then((html) => {
+                    const el = document.getElementById("footer");
+                    if (el) el.innerHTML = html;
+                })
+                .catch((err) => console.error("Footer laden mislukt:", err));
+        </script>
+        <script src="./js/script.js"></script>
 </body>
 </html>

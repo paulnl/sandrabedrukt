@@ -26,49 +26,7 @@ document.querySelectorAll('a[rel*="sponsored"]').forEach(link => {
   });
 });
 
-// === PRODUCTEN LADEN UIT JSON ===
-async function loadProducts() {
-  const grid = document.getElementById('gift-grid');
-  if (!grid) return;
-  
-  try {
-    const response = await fetch('products.json');
-    const data = await response.json();
-    
-    // Filter producten voor homepage (showOnHomepage: true)
-    const homepageProducts = data.products.filter(p => p.showOnHomepage);
-    
-    if (homepageProducts.length === 0) return;
-    
-    grid.innerHTML = homepageProducts.map(product => {
-      // Badge HTML
-      let badgeHtml = '';
-      if (product.badge) {
-        const badgeClass = `badge-${product.badge}`;
-        const badgeText = {
-          'populair': 'Populair',
-          'budget': 'Budgettip',
-          'levering': 'Snelle levering'
-        }[product.badge] || product.badge;
-        badgeHtml = `<div class="gift-card-top"><span class="badge ${badgeClass}">${badgeText}</span></div>`;
-      }
-      
-      return `
-        <article class="gift-card">
-          ${badgeHtml}
-          <h3>${product.name}</h3>
-          <p>${product.description}</p>
-          <p class="fit">Geschikt voor: ${product.fit}</p>
-          <p class="price">${product.price}</p>
-          <a href="${product.link}" class="btn btn-primary">Bekijk details</a>
-        </article>
-      `;
-    }).join('');
-    
-  } catch (error) {
-    console.error('Producten laden mislukt:', error);
-  }
-}
+
 
 // === FAQ LADEN UIT JSON ===
 async function loadFAQ() {

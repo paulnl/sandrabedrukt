@@ -2,18 +2,20 @@
 
 // Category ID naar HTML mapping
 const categoryLinks = {
-  'kraamcadeau': 'kraamcadeau-met-naam.html',
-  'mok': 'mok-met-naam.html',
-  'foto': 'cadeau-met-foto.html',
-  'budget': 'goedkope-gepersonaliseerde-cadeaus.html'
+  kraamcadeau: 'kraamcadeau-met-naam.html',
+  mok: 'mok-met-naam.html',
+  foto: 'cadeau-met-foto.html',
+  budget: 'goedkope-gepersonaliseerde-cadeaus.html'
 };
 
 // Smooth scroll voor anchors
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const href = this.getAttribute('href');
+    const target = document.querySelector(href);
+
     if (target) {
+      e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
@@ -21,24 +23,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Track outbound clicks (optioneel)
 document.querySelectorAll('a[rel*="sponsored"]').forEach(link => {
-  link.addEventListener('click', function() {
+  link.addEventListener('click', function () {
     // Analytics tracking hier toevoegen indien gewenst
   });
 });
-
-
 
 // === FAQ LADEN UIT JSON ===
 async function loadFAQ() {
   const container = document.getElementById('faq-list');
   if (!container) return;
-  
+
   try {
-    const response = await fetch('faq.json');
+    const response = await fetch('./faq.json');
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
     const data = await response.json();
-    
+
     if (!data.faq || data.faq.length === 0) return;
-    
+
     container.innerHTML = data.faq.map(item => `
       <details>
         <summary>${item.question}</summary>
@@ -50,6 +52,8 @@ async function loadFAQ() {
   }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  loadFAQ();
 });
 
 console.log('SandraBedrukt loaded');

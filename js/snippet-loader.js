@@ -1,5 +1,5 @@
 // Categorie Snippet Loader
-// Laadt HTML snippets uit categorie folders (max 10 per pagina)
+// Laadt HTML snippets uit categorie folders in bestaande contentblokken (max 10 per pagina)
 
 const categoryMap = {
   "mok-met-name.html": "categorieen/mok-met-name/",
@@ -17,6 +17,10 @@ async function loadSnippets() {
 
   const grid = document.querySelector('.gift-grid');
   if (!grid) return;
+
+  // Verwijder bestaande gift-cards (behalve de snippet-cards)
+  const existingCards = grid.querySelectorAll('.gift-card');
+  existingCards.forEach(card => card.remove());
 
   try {
     const manifestRes = await fetch('/' + categoryPath + 'manifest.json');

@@ -22,24 +22,7 @@
     }
   ],
   "products": [
-    {
-      "id": "mok-met-naam",
-      "name": "Mok met naam Jan",
-      "description": "Een klassieker die altijd werkt. Kies een naam, een lieve tekst of geboortedatum.",
-      "fit": "Verjaardag, Moederdag, bedankje",
-      "price": "Vanaf €14,95",
-      "link": "mok-met-naam.html",
-      "showOnHomepage": true,
-      "image": "mok-met-naam.png",
-      "categories": {
-        "kraamcadeau": false,
-        "mok": true,
-        "foto": false,
-        "budget": true
-      },
-      "badge": "populair"
-    },
-    {
+       {
       "id": "romper-met-naam",
       "name": "Romper met naam",
       "description": "Perfect als kraamcadeau. Zachte katoen met bedrukte of geborduurde naam.",

@@ -2,8 +2,8 @@
 // Laadt HTML snippets uit categorie folders in bestaande contentblokken (max 10 per pagina)
 
 const categoryMap = {
-  "mok-met-na m.html": "categorieen/mok-met-na m/",
-  "kraamcadeau-met-na m.html": "categorieen/kraamcadeau-met-na m/",
+  "mok-met-naam.html": "categorieen/mok-met-naam/",
+  "kraamcadeau-met-naam.html": "categorieen/kraamcadeau-met-naam/",
   "cadeau-met-foto.html": "categorieen/cadeau-met-foto/",
   "goedkope-gepersonaliseerde-cadeaus.html": "categorieen/goedkope-cadeaus/"
 };

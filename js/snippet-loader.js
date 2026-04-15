@@ -28,7 +28,7 @@ function getPageName() {
 }
 
 async function fetchManifest(categoryPath) {
-  const res = await fetch(`./${categoryPath}_manifest.json`);
+  const res = await fetch(`./${categoryPath}manifest.json`);
   if (!res.ok) throw new Error(`Manifest niet gevonden: ${categoryPath}`);
   return await res.json();
 }
